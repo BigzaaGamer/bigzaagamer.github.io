@@ -23,53 +23,22 @@
         </div>
       
         <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Home
-            </a>
-      
-            <a class="navbar-item">
-              Documentation
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-start">      
+            <!--<div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
-                More
+                
               </a>
       
               <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
               </div>
-            </div>
+            </div>-->
           </div>
       
           <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
-      <section class="hero is-large">
+      <section class="hero is-fullheight">
         <div class="hero-body">
           <div class="">
             <p class="title">
@@ -100,7 +69,7 @@
             </div>
             <div class="tile is-vertical is-parent">
               <div class="tile is-child box content ">
-                <h1>ประวัติส่วนตัว เบื้องต้น</h1>
+                <h1>รู้จักผม</h1>
                 <ul>
                     <li>ชื่อ: <strong>กรกมล ศรีอ่อน</strong> ชื่อเล่น: <strong>บิ๊ก</strong></li>
                     <li>กำลังศึกษาอยู่ที่: <strong>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</strong></li>
@@ -113,6 +82,11 @@
                             <li>ผัดซีอิ้ว</li>
                         </ul>
                     <li>สิ่งที่ชอบทำในเวลาว่าง: <strong>ฟังเพลง เล่นเกม ฝึกเขียนเว็บ, โปรแกรม อื่นๆ</strong></li>
+                    <hr>
+                    <strong>Social อื่นๆ</strong>
+                    <li><a href="https://www.facebook.com/bigzaa612015" target="_blank">FaceBook</a></li>
+                    <li><a href="https://www.github.com/BigzaaGamer" target="_blank">GitHub</a></li>
+                    <li><a href="https://open.spotify.com/user/bigzaagamer" target="_blank">Spotify</a></li>
                 </ul>
                 
               </div>
@@ -148,10 +122,14 @@
               <div class="tile is-child box content">
                 <p class="title">ผลงาน</p>
                 <ul>
-                    <li><a href="http://konkamonsion.000webhostapp.com" target="_blank">เว็บส่วนตัวอีกเว็บ</a></li>
-                    <li><a href="http://konkamonsion.000webhostapp.com/project/social_platform/" target="_blank">เว็บเครือข่ายสังคมออนไลน์ (โปรเจคจบ ปวช.3)</a></li>
-                   
-                
+                    <li><a href="http://konkamonsion.000webhostapp.com" target="_blank">เว็บส่วนตัวอีกเว็บ</a><sup>เก่า</sup></li>
+                    <li><p>เว็บเครือข่ายสังคมออนไลน์ (โปรเจคจบ ปวช.3)</p></li>
+                        <ul>
+                            <li><a href="https://github.com/BigzaaGamer/social-platform-project-nvc" target="_blank">หน้า GitHub</a></li>
+                            <li><a href="http://konkamonsion.000webhostapp.com/project/social_platform/" target="_blank">เยี่ยมชมผลงาน</a></li>
+                        </ul>
+                    </li>
+                        
                 </ul>
                 
               </div>
@@ -185,6 +163,9 @@
                   $(".navbar-menu").toggleClass("is-active");
                 });
             });
+        $("#modal-toggle").click(function(){
+            $("#modal-toggle").siblings().css("display","block");
+        })
     </script>
 </body>
 </html>
