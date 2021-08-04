@@ -1,0 +1,76 @@
+nav.navbar{
+    div.navbar-brand{
+        a.navbar-item{
+            span{
+                font-weight: 800;
+                letter-spacing: -1px;
+            }
+
+        }
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.figureOverlay{
+    background-color: #00000066;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    justify-content: center;
+    top: 0;
+}
+
+section.hero#myWeb{
+    background:url('/img/me3.jpg') center / cover;
+    *{
+        color:#fafafa !important;
+    }
+    .hero-body{
+        background-color: #00000088;
+    }
+}
+section.hero#aboutITandMobileApp{
+    background: url('/img/bigstock-abstract-technology-background-250119211.jpg') center / cover fixed;
+    .hero-body{
+        background-color: #00000088;
+    }
+    .subtitle{font-weight: 200;}
+}
+//Mobile S 320px
+@media screen and (max-width: 320px){
+
+}
+
+//Mobile L 425px
+@media screen and (max-width:425px){
+
+}
+
+//Tablet 768px
+@media screen and (max-width:768px){
+
+}
+
+//Laptop 1024px
+@media screen and (min-width:1024px){
+    section.hero{
+        .hero-body{
+            p.title{
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
+$footer-padding :3rem 1.5rem 3rem !default;
+.footer{
+    padding:$footer-padding;
+}
+.columns{
+    .column{
+        ul{margin-top: unset;}
+    }
+}
