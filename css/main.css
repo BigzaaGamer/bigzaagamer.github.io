@@ -18,14 +18,24 @@ nav.navbar div.navbar-brand a.navbar-item span {
   top: 0;
 }
 
-section.hero {
+section.hero#myWeb {
   background: url("/img/me3.jpg") center/cover;
 }
-section.hero * {
+section.hero#myWeb * {
   color: #fafafa !important;
 }
-section.hero .hero-body {
+section.hero#myWeb .hero-body {
   background-color: #00000088;
+}
+
+section.hero#aboutITandMobileApp {
+  background: url("/img/bigstock-abstract-technology-background-250119211.jpg") center/cover fixed;
+}
+section.hero#aboutITandMobileApp .hero-body {
+  background-color: #00000088;
+}
+section.hero#aboutITandMobileApp .subtitle {
+  font-weight: 200;
 }
 
 @media screen and (min-width: 1024px) {
@@ -35,6 +45,10 @@ section.hero .hero-body {
 }
 .footer {
   padding: 3rem 1.5rem 3rem;
+}
+
+.columns .column ul {
+  margin-top: unset;
 }
 
 /*# sourceMappingURL=main.css.map */
