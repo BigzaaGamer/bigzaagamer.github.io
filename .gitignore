@@ -6,5 +6,6 @@ bruh.html
 /bulma/*
 !bulma/css
 /bulma/css/*
+/img/*.psd
 !/bulma/css/bulma2.css
 !/bulma/css/bulma2.css.map
