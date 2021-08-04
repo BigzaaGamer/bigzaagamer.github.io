@@ -1,0 +1,10 @@
+/.vscode
+/sass
+/bulma/sass/
+bruh.html
+/js
+/bulma/*
+!bulma/css
+/bulma/css/*
+!/bulma/css/bulma2.css
+!/bulma/css/bulma2.css.map
