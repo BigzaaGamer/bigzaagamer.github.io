@@ -29,7 +29,7 @@ section.hero#myWeb .hero-body {
 }
 
 section.hero#aboutITandMobileApp {
-  background: url("/img/bigstock-abstract-technology-background-250119211.jpg") center/cover fixed;
+  background: url("/img/bigstock-abstract-technology-background-250119211.jpg") center/cover;
 }
 section.hero#aboutITandMobileApp .hero-body {
   background-color: #00000088;
@@ -49,6 +49,26 @@ section.hero#aboutITandMobileApp .subtitle {
 
 .columns .column ul {
   margin-top: unset;
+}
+
+nav.navbar {
+  box-shadow: #0a0a0a44 1px 1px 5px;
+}
+
+.loadingOverlay {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  overflow: hidden;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
