@@ -60,6 +60,7 @@
         <a class="navbar-item" href="#aboutMe">เกี่ยวกับผม</a>
         <a class="navbar-item" href="#knowMe">รู้จักผม</a>
         <a class="navbar-item" href="#aboutITandMobileApp">ความรู้เกี่ยวกับสาขาที่เรียน</a>
+        <a href="#myDiscord" class="navbar-item">Discord ผมเอง</a>
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
@@ -162,8 +163,8 @@
                 <ul style="margin-top:unset">
                   <li><a href="https://www.instagram.com/bigkonkamon/" target="_blank">Instagram</a></li>
                   <li><a href="https://www.last.fm/user/BigzaaGamerr" target="_blank">Last.fm</a></li>
-                  <li><a>Discord</a><code>La Gavotte#6969</code></li>
-                  <li><a>Discord Server</a>&nbsp;<sup><i>กำลังเตรียมพร้อม</i></sup></li>
+                  <li><span>Discord</span><code>La Gavotte#6969</code></li>
+                  <li><a href="https://discord.com/invite/yafBF5djRw" target="_blank">Discord Server</a></li>
                 </ul>
               </div>
             </div>
@@ -258,6 +259,22 @@
       </div>
     </div>
   </section>
+  <section class="section" id="myDiscord">
+    <div class="container">
+      <div class="box has-text-centered" >
+        <h1 class="title">Discord ผมเอง!!!!</h1>
+        <span>เข้ามาคุย มาโม้ กันได้!!!</span><br>
+        <a class="is-small" href="https://discord.com/invite/yafBF5djRw" target="_blank">https://discord.com/invite/yafBF5djRw</a>
+        <widgetbot
+        server="874676630117822475"
+        channel="874676630881173507"
+        width="100%"
+        height="600"
+        >
+        </widgetbot>
+      </div>
+    </div>
+  </section>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>Made By Konkamon Sion </p>
@@ -270,6 +287,7 @@
       </ul>
     </nav>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
   <script>
     window.addEventListener('load', (event) => {
       $(".loadingOverlay").fadeOut(300);
@@ -294,7 +312,7 @@
 
     function darkMode() {
       /*
-      Dark Mode กากๆ
+      Dark Mode กากๆ555
       */
       if (window.localStorage.getItem('isDarkMode') == 'false') {
         $(".section").addClass("has-background-black-ter");
@@ -310,13 +328,15 @@
         $("#navbarBasicExample").addClass("has-background-dark");
         $("table").addClass("has-background-grey-dark has-text-light");
         $("#toggleDarkmode").addClass("is-black");
+        $(".container").addClass("has-background-black-ter");
+        $(".box").addClass("has-background-dark has-text-light");
         $("#toggleDarkmode").html("Light Mode");
       } else {
         $(".section").removeClass("has-background-black-ter");
-        $("th").removeClass("has-text-light");
         $(".tile.is-child").removeClass("has-background-dark has-text-light");
         $(".title").removeClass("has-text-light");
         $(".h1").removeClass("has-text-light");
+        $("th").removeClass("has-text-light");
         $("strong").removeClass("has-text-light");
         $("a").removeClass("has-text-link-light");
         $("blockquote").removeClass("has-background-grey-dark");
@@ -325,7 +345,9 @@
         $("#navbarBasicExample").removeClass("has-background-dark");
         $("table").removeClass("has-background-grey-dark has-text-light");
         $("#toggleDarkmode").removeClass("is-black");
-        $("#toggleDarkmode").html("Dark Mode");
+        $(".container").removeClass("has-background-black-ter");
+        $(".box").removeClass("has-background-dark has-text-light");
+        $("#toggleDarkmode").html("Light Mode");
       }
 
     }
@@ -344,17 +366,15 @@
 
     });
   </script>
-  <!--<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
     new Crate({
-      server: '874676630117822475', // ミ★𝘒𝘰𝘯𝘬𝘢𝘮𝘰𝘯 𝘚𝘪𝘰𝘯★彡
-      channel: '874676630881173507', // #ช่องพิมพ์คุย-หลัก🗯💬
-      glyph: ['https://cdn.discordapp.com/icons/874676630117822475/dd75eb9f2a52f4cb075e1ed83f249386.png?size=1024',
-        '100%'
-      ],
-      //shard: 'https://emerald.widgetbot.io'
+      server: '874676630117822475',
+      channel: '874676630881173507',
+      glyph: ['https://cdn.discordapp.com/icons/874676630117822475/dd75eb9f2a52f4cb075e1ed83f249386.png','100%']
     })
-    crate.notify('Discord ผมเอง!\nเข้ามาคุย มาโม้ กันได้')
-  </script>-->
+    crate.notify('Discord ผมเอง!\n เข้ามาคุย มาโม้ กันได้!')
+
+  </script>
 </body>
 
 </html>
